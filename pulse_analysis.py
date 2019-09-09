@@ -23,6 +23,51 @@ no.matrix(df)
 
 
 #%%
+df.shape
+
+
+#%%
+df.head()
+
+
+#%%
+df.info()
+
+#%%
+len(df.columns)
+
+#%%
+df.columns = [
+    'income',
+    'gender',
+    'age',
+    'age_range',
+    'party',
+    'trump_job_approval',
+    'education',
+    'edu_other',
+    'race',
+    'race_other'
+    'relationship',
+    'relationship_other'
+    'q8x',
+    'robots_job',
+    'climate_change',
+    'transformer_movies_seen',
+    'q11x',
+    'benevolent_scientists',
+    'vaccines_safe',
+    'books_read_yearly',
+    'q14x',
+    'believe_in_ghosts',
+    'federal_govt_budget_spent_science',
+    'q16x',
+    'funding_for_science',
+    'earth_farther_from_sun_in_winter',
+    'smart_sad_or_happy_dumb',
+    'pee_in_shower'
+    ]
 
 
 
+#%%
