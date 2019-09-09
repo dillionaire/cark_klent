@@ -1,0 +1,4 @@
+# ignore data files like csv, xlsx, json, etc.
+*.csv
+*.xlsx
+*.json
