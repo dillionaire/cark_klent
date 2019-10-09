@@ -17,7 +17,6 @@ import missingno as no
 # (must install package too: conda install vega --channel conda-forge)
 import altair.vegalite.v3 as alt
 
-
 #%%
 # of all the different alt.renderers.names() for our Altair graphs
 # we use vegascope because it let's us load all our
