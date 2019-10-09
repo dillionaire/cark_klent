@@ -13,9 +13,8 @@ except:
 import pandas as pd
 import missingno as no
 
-
 #%%
-df = pd.read_csv('201709-CAH_PulseOfTheNation_Raw.csv')
+df = pd.read_csv('/Users/thomas/Documents/Python/gitRepos/cark_klent/201709-CAH_PulseOfTheNation_Raw.csv')
 
 
 #%%
@@ -47,9 +46,9 @@ df.columns = [
     'education',
     'edu_other',
     'race',
-    'race_other'
+    'race_other',
     'relationship',
-    'relationship_other'
+    'relationship_other',
     'q8x',
     'robots_job',
     'climate_change',
@@ -65,9 +64,19 @@ df.columns = [
     'funding_for_science',
     'earth_farther_from_sun_in_winter',
     'smart_sad_or_happy_dumb',
-    'pee_in_shower'
+    'pee_in_shower',
     ]
 
 
+
+#%%
+df.shape
+
+#%%
+df.describe()
+
+
+#%%
+df.info()#%%
 
 #%%
