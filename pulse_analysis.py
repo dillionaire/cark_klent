@@ -98,11 +98,20 @@ df.describe()
 # web browser to view it. But Chart.display() is better
 chart = alt.Chart(df).mark_bar().encode(
     x='income:Q',
-    y='robots_job:O',
-    color='pee_in_shower:N',
+    y='party:N',
     row=alt.Row('smart_sad_or_happy_dumb:N', sort=['Smart and Sad', 'Dumb and happy'])
 ).properties(height=150, width=600)
 chart.display()
+
+
+#%%
+chart = alt.Chart(df).mark_bar().encode(
+    x='income:Q',
+    y='race:N',
+    row=alt.Row('smart_sad_or_happy_dumb:N', sort=['Smart and Sad', 'Dumb and happy'])
+).properties(height=150, width=600)
+chart.display()
+
 
 #%%
 area = alt.Chart(df).mark_bar(opacity=1).encode(
@@ -115,4 +124,6 @@ area.display()
 #%%
 df.smart_sad_or_happy_dumb
 
+#%%
+df.income.value_counts()
 #%%
